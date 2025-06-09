@@ -1,0 +1,7 @@
+.slick-prev, .slick-next {
+    color: #01D3FF !important; /* Light blue */
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #01D3FF !important; /* Light blue */
+}

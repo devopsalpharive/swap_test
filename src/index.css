@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient-primary: linear-gradient(90deg, #DD00AC,#7130C3,#410093);
+  --linear-gradient: linear-gradient(356.08deg, #3A00EA 2.97%, #DD00AC 43.25%);
+  --banner-gradient: linear-gradient(93.97deg, #6E85F7 2.89%, #FF00AA 99.07%);
+}
+
+
+body {
+  font-family: "Funnel Display", sans-serif;
+}
+
+/* src/styles/fonts.css */
+@font-face {
+  font-family: "Funnel Display", sans-serif;
+  src: url("/fonts/FunnelDisplay.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom Scrollbar for WebKit Browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 2px;
+}
+.order-book-scroll::-webkit-scrollbar{
+  width: 0;
+}
+
+.sell-over::-webkit-scrollbar, .scrollbar-thin::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(93.97deg, #6E85F7 2.89%, #FF00AA 99.07%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1F2937;
+  /* Gray-700 */
+}
+
+@layer utilities {
+  .step-container {
+    -webkit-text-stroke: 0.5px white;
+    padding-left: 8px;
+    padding-top: 4px;
+  }
+  .border-gradient-white {
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    border-image-slice: 1;
+  }
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+
+.tr-green {
+  color: green;
+}
+
+.tr-red {
+  color: red;
+}
+
+
+  
